@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="2172" height="724" alt="Charcoal Pakistan Retail Analytics Case Study" src="https://github.com/user-attachments/assets/bf66575d-186e-47ea-8c47-af147d02693c" />
+![Charcoal Pakistan Retail Analytics](assets/branding/project_banner.svg)
 
 # From Retail Data to Business Decisions
 
@@ -8,7 +8,7 @@
 
 ![SQL Server](https://img.shields.io/badge/SQL_Server-Data%20Validation-242424?style=flat-square) ![Power BI](https://img.shields.io/badge/Power_BI-3%20Dashboards-C9A24D?style=flat-square) ![DAX](https://img.shields.io/badge/DAX-KPI%20Engineering-242424?style=flat-square) ![Dataset](https://img.shields.io/badge/Data-Simulated-777777?style=flat-square)
 
-**[Business Challenge](#the-business-challenge) · [Dashboards](#power-bi-dashboards) · [SQL](#sql-server-workflow) · [DAX](#dax--kpi-engineering) · [Insights](#findings-and-recommendations) · [Files](#repository-guide)**
+**[Business Challenge](#the-business-challenge) · [Data Model](#retail-data-model--er-diagram) · [Dashboards](#power-bi-dashboards) · [SQL](#sql-server-workflow) · [DAX](#dax--kpi-engineering) · [Insights](#findings-and-recommendations) · [Files](#repository-guide)**
 
 </div>
 
@@ -55,12 +55,33 @@ flowchart LR
 
 **Why this order matters:** A visually attractive dashboard can still mislead if the joins, movement signs, date logic or filter context are wrong. Validation was treated as part of analysis, not a finishing touch.
 
+## Retail data model & ER diagram
+
+A retail analytics solution needs to connect **what was sold**, **what was purchased**, **where stock moved**, and **what inventory remained**. The diagram below provides a visual overview of the apparel supply-chain and inventory processes, including products, suppliers, stores, warehouses, purchase orders, goods receipts, sales, returns, transfers and stock snapshots.
+
+[![Charcoal Pakistan apparel supply-chain and inventory ER diagram](assets/diagrams/charcoal_supply_chain_er_diagram.png)](assets/diagrams/charcoal_supply_chain_er_diagram.png)
+
+*Click the diagram to open the full-resolution image.*
+
+### How to read the model
+
+| Business area | Key entities shown | Why an analyst needs them |
+|---|---|---|
+| Product & location dimensions | Products, variants, suppliers, stores, warehouses | Describe the *who, what and where* behind transactions |
+| Procurement | Purchase orders, goods receipts | Compare expected supply with received quantities and delivery dates |
+| Sales & returns | Sales, returns | Measure demand, revenue and returned quantities |
+| Inventory control | Stock movements, inventory snapshots | Trace stock changes and reconcile recorded vs calculated balances |
+| Internal distribution | Replenishment requests, transfers | Illustrate how inventory may move from warehouses to stores |
+
+> **Model accuracy note:** This uploaded ER diagram is a **conceptual supply-chain view**, not an exact export of the implemented SQL Server or Power BI relationship model. It includes entities such as `FactReplenishmentRequests` and `FactInventoryLots` that are **not among the 12 documented `_Stage` tables** in this repository, and some entity/column labels differ. For the implemented staging-table names, inspect the [SQL source](sql/charcoal.sql), [data structure](#data-structure), and the `.pbix` model. Do not treat every illustrated relationship as a verified database foreign key.
+
+**Analytical value:** Thinking in terms of entities and relationships helps prevent incorrect joins, double-counted transactions, and misleading KPI calculations. The model also makes it easier to explain how procurement, sales, transfers and stock availability relate to business questions.
+
 ## Power BI dashboards
 
 ### 01 · Executive Overview
 
-<img width="1277" height="1169" alt="1" src="https://github.com/user-attachments/assets/7a594b57-c134-49b7-8618-c1b2cecb2756" />
-
+![Executive Overview dashboard](assets/dashboards/01_executive_overview.png)
 
 **Purpose:** give management one view of revenue, orders, units, supplier delivery and inventory variance, supported by monthly sales trends, store rankings and leading products.
 
@@ -76,8 +97,7 @@ flowchart LR
 
 ### 02 · Sales & Product Performance
 
-<img width="999" height="740" alt="2" src="https://github.com/user-attachments/assets/dd7401a9-d98d-4306-abc6-6927359fce6a" />
-
+![Sales & Product Performance dashboard](assets/dashboards/02_sales_product_performance.png)
 
 **Purpose:** understand revenue composition and compare performance across time, product categories, products and stores.
 
@@ -93,7 +113,7 @@ The dashboard compares monthly gross and net sales, top products by revenue, pro
 
 ### 03 · Inventory Health & Stock Availability
 
-<img width="1175" height="768" alt="3" src="https://github.com/user-attachments/assets/693b63ef-0bf4-4fbd-82f5-dd8dae4398d0" />
+![Inventory Health dashboard](assets/dashboards/03_inventory_health.png)
 
 **Purpose:** show latest available stock, product–location availability, historical reconciliation issues and stock movement components.
 
@@ -225,6 +245,7 @@ Charcoal_Retail_Analytics_GitHub_Enhanced/
 ├── README.md                         ← Start here: complete business case study
 ├── assets/
 │   ├── branding/project_banner.svg   ← Custom charcoal-and-gold cover
+│   ├── diagrams/charcoal_supply_chain_er_diagram.png  ← Conceptual ER diagram
 │   └── dashboards/
 │       ├── 01_executive_overview.png
 │       ├── 02_sales_product_performance.png
@@ -242,7 +263,7 @@ Charcoal_Retail_Analytics_GitHub_Enhanced/
 ### How to explore this project
 
 1. Read the business challenge and dashboard interpretations above.
-2. Open the three screenshots for a quick visual overview.
+2. Review the [ER diagram](assets/diagrams/charcoal_supply_chain_er_diagram.png) and three dashboard screenshots for a visual overview.
 3. Explore [`sql/charcoal.sql`](sql/charcoal.sql) and its [walkthrough](docs/SQL_ANALYSIS.md) for actual SQL logic.
 4. Open the [PBIX file](powerbi/Charcoal_Pakistan_Retail_Analytics.pbix) in Power BI Desktop to inspect the report and model; refreshing may require the original SQL Server database and local configuration.
 5. Read the [DAX guide](docs/DAX_MEASURES.md) for the documented measure logic and filter-context QA.
@@ -250,3 +271,4 @@ Charcoal_Retail_Analytics_GitHub_Enhanced/
 ---
 
 <div align="center"><strong>From validated retail data to clearer business decisions.</strong><br/><sub>Independent simulated-data analytics portfolio project · SQL Server · Power BI · DAX</sub></div>
+
