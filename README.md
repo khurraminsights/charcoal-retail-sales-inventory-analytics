@@ -59,7 +59,10 @@ flowchart LR
 
 A retail analytics solution needs to connect **what was sold**, **what was purchased**, **where stock moved**, and **what inventory remained**. The diagram below provides a visual overview of the apparel supply-chain and inventory processes, including products, suppliers, stores, warehouses, purchase orders, goods receipts, sales, returns, transfers and stock snapshots.
 
-[![Charcoal Pakistan apparel supply-chain and inventory ER diagram](assets/diagrams/charcoal_supply_chain_er_diagram.png)](assets/diagrams/charcoal_supply_chain_er_diagram.png)
+<img width="1491" height="1055" alt="Charcoal Pakistan Supply Chain ER Diagram" src="https://github.com/user-attachments/assets/1e6813b4-ffd4-4390-a8e2-4bbff7a84b91" />
+
+
+(assets/diagrams/charcoal_supply_chain_er_diagram.png)
 
 *Click the diagram to open the full-resolution image.*
 
@@ -81,7 +84,8 @@ A retail analytics solution needs to connect **what was sold**, **what was purch
 
 ### 01 · Executive Overview
 
-![Executive Overview dashboard](assets/dashboards/01_executive_overview.png)
+<img width="1277" height="1169" alt="1" src="https://github.com/user-attachments/assets/41edc6ad-89b6-4277-b3fd-d9d6ecf5f4ac" />
+
 
 **Purpose:** give management one view of revenue, orders, units, supplier delivery and inventory variance, supported by monthly sales trends, store rankings and leading products.
 
@@ -97,7 +101,8 @@ A retail analytics solution needs to connect **what was sold**, **what was purch
 
 ### 02 · Sales & Product Performance
 
-![Sales & Product Performance dashboard](assets/dashboards/02_sales_product_performance.png)
+<img width="999" height="740" alt="2" src="https://github.com/user-attachments/assets/907db03c-8687-4edd-9767-a73596285378" />
+
 
 **Purpose:** understand revenue composition and compare performance across time, product categories, products and stores.
 
@@ -113,7 +118,7 @@ The dashboard compares monthly gross and net sales, top products by revenue, pro
 
 ### 03 · Inventory Health & Stock Availability
 
-![Inventory Health dashboard](assets/dashboards/03_inventory_health.png)
+<img width="1175" height="768" alt="3" src="https://github.com/user-attachments/assets/08d9df04-e9a7-48f7-8342-335696bc9860" />
 
 **Purpose:** show latest available stock, product–location availability, historical reconciliation issues and stock movement components.
 
