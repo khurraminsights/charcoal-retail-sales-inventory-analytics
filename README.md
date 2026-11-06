@@ -84,7 +84,7 @@ A retail analytics solution needs to connect **what was sold**, **what was purch
 
 ### 01 · Executive Overview
 
-<img width="1277" height="1169" alt="1" src="https://github.com/user-attachments/assets/41edc6ad-89b6-4277-b3fd-d9d6ecf5f4ac" />
+<img width="1448" height="1086" alt="1" src="https://github.com/user-attachments/assets/9e2fb240-4008-42a5-8af7-2a1687fc25c2" />
 
 
 **Purpose:** give management one view of revenue, orders, units, supplier delivery and inventory variance, supported by monthly sales trends, store rankings and leading products.
@@ -101,8 +101,7 @@ A retail analytics solution needs to connect **what was sold**, **what was purch
 
 ### 02 · Sales & Product Performance
 
-<img width="999" height="740" alt="2" src="https://github.com/user-attachments/assets/907db03c-8687-4edd-9767-a73596285378" />
-
+<img width="1457" height="1079" alt="2" src="https://github.com/user-attachments/assets/8589e052-2f73-4563-9e06-a8da7035fa96" />
 
 **Purpose:** understand revenue composition and compare performance across time, product categories, products and stores.
 
@@ -118,7 +117,7 @@ The dashboard compares monthly gross and net sales, top products by revenue, pro
 
 ### 03 · Inventory Health & Stock Availability
 
-<img width="1175" height="768" alt="3" src="https://github.com/user-attachments/assets/08d9df04-e9a7-48f7-8342-335696bc9860" />
+<img width="1551" height="1014" alt="3" src="https://github.com/user-attachments/assets/f48b4e12-c719-4be7-84b0-175f4f5ee5ad" />
 
 **Purpose:** show latest available stock, product–location availability, historical reconciliation issues and stock movement components.
 
