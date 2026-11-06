@@ -1,6 +1,6 @@
 <div align="center">
 
-![Charcoal Pakistan Retail Analytics](assets/branding/project_banner.svg)
+<img width="2172" height="724" alt="Charcoal Pakistan Retail Analytics Case Study" src="https://github.com/user-attachments/assets/bf66575d-186e-47ea-8c47-af147d02693c" />
 
 # From Retail Data to Business Decisions
 
