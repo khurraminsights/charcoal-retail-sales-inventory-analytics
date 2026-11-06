@@ -59,7 +59,8 @@ flowchart LR
 
 ### 01 · Executive Overview
 
-![Executive Overview dashboard](assets/dashboards/01_executive_overview.png)
+<img width="1277" height="1169" alt="1" src="https://github.com/user-attachments/assets/7a594b57-c134-49b7-8618-c1b2cecb2756" />
+
 
 **Purpose:** give management one view of revenue, orders, units, supplier delivery and inventory variance, supported by monthly sales trends, store rankings and leading products.
 
@@ -75,7 +76,8 @@ flowchart LR
 
 ### 02 · Sales & Product Performance
 
-![Sales & Product Performance dashboard](assets/dashboards/02_sales_product_performance.png)
+<img width="999" height="740" alt="2" src="https://github.com/user-attachments/assets/dd7401a9-d98d-4306-abc6-6927359fce6a" />
+
 
 **Purpose:** understand revenue composition and compare performance across time, product categories, products and stores.
 
@@ -91,7 +93,7 @@ The dashboard compares monthly gross and net sales, top products by revenue, pro
 
 ### 03 · Inventory Health & Stock Availability
 
-![Inventory Health dashboard](assets/dashboards/03_inventory_health.png)
+<img width="1175" height="768" alt="3" src="https://github.com/user-attachments/assets/693b63ef-0bf4-4fbd-82f5-dd8dae4398d0" />
 
 **Purpose:** show latest available stock, product–location availability, historical reconciliation issues and stock movement components.
 
